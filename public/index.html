@@ -1,104 +1,73 @@
-<!doctype html>
-<html lang="en">
-    <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+</head>
+<body  text= "black" style="background-color:black;">
+<center>
+<form name=cal>
+<table>
 
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container" >
-            <br/>
-            <form name="calculator">
-                <div class="col-3">
-                    <div class="row">
-                        <div class="col px-2">
-                                <input type="text" class="form-control" name="display" id="display" value='0' disabled>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col px-1 mx-1">
-                            <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='+'">+</button>
-                        </div>
-                        <div class="col px-1 mx-1">
-                                <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='-'">-</button>
-                        </div>
-                        <div class="col px-1 mx-1">
-                                <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='*'">X</button>
-                        </div>
-                        <div class="col px-1 mx-1">
-                                <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='/'">/</button>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col mx-2">
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='7'">7</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='4'">4</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='1'">1</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-danger btn-block" onclick="calculator.display.value =''">AC</button>
-                                </div>
-                        </div>
-
-                        <div class="col mx-2">
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='8'">8</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='5'">5</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='2'">2</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-danger btn-block" onclick="calculator.display.value ='0'">0</button>
-                                </div>
-                        </div>
-
-                        <div class="col mx-2">
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='9'">9</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='6'">6</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-primary btn-block" onclick="calculator.display.value+='3'">3</button>
-                                </div>
-                                <div class="row my-1">
-                                        <button type="button" class="btn btn-danger btn-block" onclick="calculator.display.value ='.'">.</button>
-                                </div>
-                        </div>
-
-                        <div class="col mx-2 d-flex align-items-stretc">
-                            <div class="row my-1 ">
-                                    <button type="button" class="btn btn-success btn-block" onclick="calculator.display.value = eval(calculator.display.value)" style="width: 52px;">=</button>
-                            </div>
-                        </div>
+<tr>
+<td colspan="1">
+<input type="text" name="ans" placeholder="enter expression" value="">
+</td>
+</tr>
 
 
 
-                            
-    
-                    </div>
-                   
-                </div>
+<tr>
+<td colspan="1">
+<center>
+<input type="button" value="7" onClick="document.cal.ans.value+='7'">
+<input type="button" value="8" onClick="document.cal.ans.value+='8'">
+<input type="button" value="9" onClick="document.cal.ans.value+='9'">
+<input type="button" value=" -" onClick="document.cal.ans.value+=' -'">
+</center>
+</td>
+</tr>
 
-            </form>
-        </div>
+<br>
+
+<tr>
+<td colspan="1">
+<center>
+<input type="button" value="4" onClick="document.cal.ans.value+='4'">
+<input type="button" value="5" onClick="document.cal.ans.value+='5'">
+<input type="button" value="6" onClick="document.cal.ans.value+='6'">
+<input type="button" value="+" onClick="document.cal.ans.value+='+'">
+</center>
+</td>
+</tr>
+
+<br>
+
+<tr>
+<td colspan="1">
+<center>
+<input type="button" value="1" onClick="document.cal.ans.value+='1'">
+<input type="button" value="2" onClick="document.cal.ans.value+='2'">
+<input type="button" value="3" onClick="document.cal.ans.value+='3'">
+<input type="button" value="*" onClick="document.cal.ans.value+='*'">
+</center>
+</td>
+</tr>
+
+<tr>
+<td colspan="1">
+<center>
+<input type="reset" value="C">
+<input type="button" value="0" onClick="document.cal.ans.value+='0'">
+<input type="button" value="=" onClick="document.cal.ans.value=eval(document.cal.ans.value)">
+<input type="button" value="/" onClick="document.cal.ans.value+='/'">
+</center>
+</td>
+</tr>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    </body>
+
+
+
+</table>
+</body>
 </html>
